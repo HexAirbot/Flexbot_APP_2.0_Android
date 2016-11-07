@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.mjpegdemo.images.ViewPagerFixed
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/actionbar_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_ImagePager_Actionbar_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/imagepager_actionbar_back_bg"
+            android:src="@drawable/actionbar_back" />
+
+        <ImageView
+            android:id="@+id/iv_ImagePager_Actionbar_Photo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_ImagePager_Actionbar_Back"
+            android:background="@drawable/imagepager_actionbar_back_bg"
+            android:src="@drawable/actionbar_photo" />
+
+        <ImageView
+            android:id="@+id/iv_ImagePager_Actionbar_More"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/imagepager_actionbar_back_bg"
+            android:src="@drawable/actionbar_more_icon" />
+
+        <TextView
+            android:id="@+id/txt_imagecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0/1"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_Actionbar_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/actionbar_bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_Actionbar_Bottom_Info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imagepager_actionbar_back_bg"
+            android:src="@drawable/acitonbar_bottom_info" />
+
+        <ImageView
+            android:id="@+id/iv_Actionbar_Bottom_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imagepager_actionbar_back_bg"
+            android:src="@drawable/actionbar_bottom_delete" />
+    </LinearLayout>
+
+</RelativeLayout>

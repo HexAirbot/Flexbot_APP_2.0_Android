@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cc.flexbot.www.launch.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_menu"
+    hyman:rightPadding="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <include layout="@layout/left_menue"></include>
+
+            <include layout="@layout/launch_content"></include>
+
+
+        </LinearLayout>
+
+</cc.flexbot.www.launch.SlidingMenu>
+

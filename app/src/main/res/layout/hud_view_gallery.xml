@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:id="@+id/layout_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="#111111"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_playback_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actionbar_back_bg_state"
+            android:src="@drawable/actionbar_back1" />
+
+        <ImageView
+            
+            android:id="@+id/seprater"
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_playback_actionbar_back"
+            android:src="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_Playback_Actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/whitesmoke"
+            android:layout_toRightOf="@id/seprater"
+            android:text="@string/tv_Playback_BuiltinSdcard"
+            android:textSize="18sp" />
+  
+        <ImageView
+            android:id="@+id/iv_playback_actionbar_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/actionbar_back_bg_state"
+            android:src="@drawable/actionbar_more" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/tv_Playback_Photos"
+            android:textColor="#000000"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/tv_Playback_Videos"
+            android:textColor="#000000"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/qrcode_scan_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#000000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

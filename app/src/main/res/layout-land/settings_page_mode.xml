@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="144dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/isBeginnerModeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/isLeftHandedCheckBox"
+        android:layout_below="@+id/isLeftHandedCheckBox"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/settings_v_gap"
+        android:button="@drawable/checkbox" />
+
+    <TextView
+        android:id="@+id/isBeginnerModeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/isLeftHandedTitleTextView"
+        android:layout_alignTop="@+id/isBeginnerModeCheckBox"
+        android:layout_gravity="center"
+        android:text="@string/settings_item_beginner_mode"
+        android:textColor="@color/white"
+        android:textSize="@dimen/settings_indicator_text_size" />
+
+
+    <CheckBox
+        android:id="@+id/isLeftHandedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:button="@drawable/checkbox"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/isLeftHandedTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/isLeftHandedCheckBox"
+        android:layout_toLeftOf="@+id/view1"
+        android:text="@string/settings_item_left_handed"
+        android:textColor="@color/white"
+        android:textSize="@dimen/settings_indicator_text_size" />
+
+
+    <CheckBox
+        android:id="@+id/isAccModeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/isBeginnerModeCheckBox"
+        android:layout_below="@+id/isBeginnerModeCheckBox"
+        android:layout_marginTop="@dimen/settings_v_gap"
+        android:button="@drawable/checkbox" />
+
+    <TextView
+        android:id="@+id/isAccModeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/isBeginnerModeTitleTextView"
+        android:layout_alignTop="@+id/isAccModeCheckBox"
+        android:text="@string/settings_item_acc_mode"
+        android:textColor="@color/white"
+        android:textSize="@dimen/settings_indicator_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/isAccModeCheckBox"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:layout_width="88dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_black"
+            android:textSize="@dimen/settings_btn_text_size"
+            android:textColor="@color/white"
+            android:text="@string/btn_title_reset"
+            android:layout_marginStart="144dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/resetBtn"/>
+
+        <Button
+            android:id="@+id/magCalibrateBtn"
+            android:layout_width="88dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/btn_black"
+            android:text="@string/btn_title_calibrate_mag"
+            android:textColor="@color/white"
+            android:textSize="@dimen/settings_btn_text_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/prombtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/isBeginnerModeTitleTextView"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/isLeftHandedTitleTextView"
+        android:src="@drawable/prombtn" />
+
+    <ImageView
+        android:id="@+id/prombtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/isAccModeTitleTextView"
+        android:layout_alignLeft="@+id/prombtn1"
+        android:layout_alignTop="@+id/isAccModeTitleTextView"
+        android:src="@drawable/prombtn" />
+
+
+    <ImageView
+        android:id="@+id/propicture1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/isAccModeTitleTextView"
+        android:layout_alignEnd="@+id/propicture2"
+        android:layout_alignStart="@+id/isAccModeTitleTextView"
+        android:layout_below="@+id/isBeginnerModeTitleTextView"
+        android:src="@drawable/propicture1" />
+
+    <ImageView
+        android:id="@+id/propicture2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/isAccModeTitleTextView"
+        android:layout_below="@+id/isAccModeTitleTextView"
+        android:layout_toStartOf="@+id/isAccModeCheckBox"
+        android:src="@drawable/propicture2" />
+
+
+</RelativeLayout>

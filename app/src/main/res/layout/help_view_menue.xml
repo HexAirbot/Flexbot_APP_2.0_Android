@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/top_bar_background_lunch">
+
+        <ImageView
+            android:id="@+id/backBtn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/backbtn" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:text="@string/lunch_menue_title_help"
+            android:textColor="@color/white"
+            android:textSize="@dimen/settings_title_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:id="@+id/help_01"
+            android:src="@drawable/help_menue_01"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:id="@+id/help_02"
+            android:src="@drawable/help_menue_02"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:id="@+id/help_03"
+            android:src="@drawable/help_menue_03"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:id="@+id/help_04"
+            android:src="@drawable/help_menue_04"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:id="@+id/help_05"
+            android:src="@drawable/help_menue_05"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:background="#00000000"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

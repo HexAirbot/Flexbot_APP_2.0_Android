@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!-- android:background="@drawable/settings_bg" -->
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/setting_background"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/btn_back" />
+
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="true"
+                android:text="@string/settings_title_connection"
+                android:textColor="@color/white"
+                android:textSize="@dimen/settings_title_text_size" />
+
+            <!--<cc.flexbot.www.ui.control.ViewPagerIndicator-->
+                <!--android:id="@+id/pageIndicator"-->
+                <!--style="@style/ViewPagerIndicatorStyle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true" />-->
+            <!--<include layout="@layout/settings_page_mode"></include>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/top">
+
+            <!--<ImageButton
+                android:id="@+id/preBtn"
+                style="@style/SettingsNavigationButton.Prev"
+                android:layout_width="@dimen/setttings_navigation_buton_width"
+                android:layout_height="fill_parent"
+                android:src="@drawable/btn_arrow_left_normal"
+                android:visibility="invisible" />-->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               ></android.support.v4.view.ViewPager>
+
+           <!-- android:layout_toLeftOf="@+id/nextBtn"
+            android:layout_toRightOf="@+id/preBtn"-->
+
+            <!--<ImageButton
+                android:id="@+id/nextBtn"
+                style="@style/SettingsNavigationButton.Next"
+                android:layout_width="@dimen/setttings_navigation_buton_width"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/btn_arrow_right_normal" /-->>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Flexbot</string>
+    <string name="settings_title_connection">连接FLEXBOT</string>
+    <string name="settings_title_personal">个人设置</string>
+    <string name="settings_title_video">视频设置</string>
+    <string name="settings_title_angel_trim">飞行角度修正</string>
+    <string name="settings_title_mode">模式设置</string>
+    <string name="settings_title_about">关于Flexbot</string>
+    
+    <string name="btn_title_default_settings">默认设置</string>
+    <string name="btn_title_calibrate_acc">校准加速计</string>
+    <string name="btn_title_calibrate_mag">校准罗盘</string>
+    <string name="btn_title_scan">扫描</string>
+    <string name="btn_title_stop_scan">停止扫描</string>
+    <string name="btn_title_scanning">扫描中</string>
+    <string name="settings_item_connection_state_not_conneceted">未连接</string>
+    <string name="settings_item_connection_state_conneceted">已连接</string>
+    
+    <string name="settings_item_left_handed">左手模式</string>
+    <string name="settings_item_interface_opacity">界面透明度</string>
+    <string name="settings_item_acc_mode">加速计控制模式</string>
+    <string name="settings_item_headfree_mode">无头模式</string>
+    <string name="settings_item_beginner_mode">新手模式</string>
+    <string name="settings_item_take_off_throttle">起飞油门</string>
+    <string name="settings_item_aileron_and_elevator_dead_band">Aileron/Elevator操作无效区</string>
+    <string name="settings_item_rudder_dead_band">Rudder操作无效区</string>
+    <string name="settings_item_stop_scan">停止扫描</string>
+    <string name="settings_item_scanning">扫描中</string>
+    <string name="settings_item_scan">扫描</string>
+    <string name="settings_item_not_connected">未连接</string>
+    <string name="settings_item_connected">已连接</string>
+    <string name="settings_item_scanning_anyflite">扫描Flexbot中...</string>
+    <string name="ble_not_supported">此设备不支持BLE!</string>
+    <string name="bluetooth_not_supported">此设备不支持蓝牙!</string>
+    
+    <string name="dialog_title_info">提示</string>
+    <string name="dialog_connect">连接到Flexbot?</string>
+    <string name="dialog_disconnect">断开连接?</string>
+    <string name="dialog_calibrate_acc">校准Flexbot的加速计?</string>
+    <string name="dialog_calibrate_mag">校准Flexbot的数字罗盘?</string>
+    <string name="dialog_reset">恢复到默认设置?</string>    
+    
+    <string name="dialog_btn_yes">是</string>
+    <string name="dialog_btn_no">否</string>
+    
+    <string name="connection_failed">连接失败!</string>
+    <string name="connection_successful">连接成功!</string>
+    <string name="connection_lost">失去连接!</string>
+    
+    <string name="dialog_btn_ok">好的</string>
+    <string name="beginner_mode_info">当前控制模式是新手模式，若您已经能熟练操作Flexbot飞行器，您可以在模式设置界面中将新手模式关闭。</string>    
+
+	<string name="btn_close">关闭</string>
+	<string name="unknown">未知</string>
+	
+	<string name="btn_title_feedback">反馈</string>	
+	<string name="btn_feedback">反馈</string>
+	<string name="send_feedback">发送</string>
+	
+	<string name="kindly_reminder">提示</string>
+    <string name="send_success">反馈意见提交成功！</string>
+    <string name="send_fail">发送失败！</string>
+    <string name="sure_msg">确定</string>
+    <string name="missing_input">请输入内容。</string>
+    <string name="sharebtnname">分享</string>
+    <string name="delbtnname">删除</string>
+    <string name="del_text">将删除%1$d个项目。</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_ok">确定</string>
+    <string name="playbtn">播放</string>
+    <string name="sending">发送中...</string>
+    <string name="auto_alt_hold">自动定高</string>
+</resources>

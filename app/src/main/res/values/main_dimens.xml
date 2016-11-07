@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_btn_margin_top">5dp</dimen>
+    <dimen name="main_btn_margin_left">10dp</dimen>
+    <dimen name="main_btn_margin_right">10dp</dimen>
+    <dimen name="main_indicator_margin_top">12dp</dimen>
+    <dimen name="main_state_text_size">12sp</dimen>
+    <dimen name="main_state_text_margin_top">14dp</dimen>
+    <dimen name="main_joy_margin">25dp</dimen>
+
+    <dimen name="main_btn_settings_margin_top">@dimen/main_btn_margin_top</dimen>
+    <dimen name="main_btn_settings_margin_right">17dp</dimen>
+
+    <dimen name="main_btn_attitude_margin_top">@dimen/main_btn_margin_top</dimen>
+    <dimen name="main_btn_attitude_margin_right">72dp</dimen>
+
+    <dimen name="main_btn_back_margin_top">5dp</dimen>
+    <dimen name="main_btn_back_margin_left">@dimen/main_btn_margin_left</dimen>
+
+    <dimen name="main_btn_capture_margin_top">5dp</dimen>
+    <dimen name="main_btn_capture_margin_left">63dp</dimen>
+
+    <dimen name="main_btn_record_margin_top">5dp</dimen>
+    <dimen name="main_btn_record_margin_left">118dp</dimen>
+
+    <dimen name="main_ble_margin_top">10dp</dimen>
+    <dimen name="main_ble_margin_right">130dp</dimen>
+
+
+    <dimen name="main_attitudeBg_margin_top">60dp</dimen>
+
+
+</resources>

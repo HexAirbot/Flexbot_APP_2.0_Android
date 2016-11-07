@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/gridview_menu_device"
+        android:showAsAction="never"
+        android:icon="@drawable/playback_menu_phone"
+        android:title="@string/tv_Playback_BuiltinSdcard"/>
+    <item
+        android:id="@+id/gridview_menu_local"
+        android:icon="@drawable/playback_menu_sdcard"
+        android:showAsAction="never"
+        android:title="@string/tv_Playback_ExternalSdcard"/>
+
+</menu>

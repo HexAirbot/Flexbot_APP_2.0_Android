@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_circle_indicator_color">#FFFF00</color>
+    <color name="default_circle_indicator_active_color">#7CFC00</color>
+    <dimen name="default_circle_indicator_radius">5dp</dimen>  
+    <dimen name="default_circle_indicator_gap">5dp</dimen>  
+</resources>

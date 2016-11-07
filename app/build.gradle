@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'Flexbot'
+            keyPassword '123456'
+            storeFile file('C:/Users/Administrator/Desktop/android.keystore')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 18
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "cc.flexbot.www"
+        minSdkVersion 18
+        targetSdkVersion 19
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+        packagingOptions {
+            exclude 'META-INF/NOTICE.txt'
+            exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('libs/dd-plist.jar')
+    compile files('libs/universal-image-loader-1.8.4-with-sources.jar')
+    compile files('libs/wifi.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile project(':weiboSDK')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/avoscloud-sdk-v3.13.5.jar')
+    compile files('libs/avoscloud-statistics-v3.13.5.jar')
+    compile files('libs/fastjson.jar')
+    compile files('libs/httpmime-4.2.4.jar')
+    compile files('libs/okhttp-2.6.0-leancloud.jar')
+    compile files('libs/okio-1.6.0-leancloud.jar')
+    compile files('libs/GifView.jar')
+}

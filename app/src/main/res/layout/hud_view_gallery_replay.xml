@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.example.media.ReplaySurfaceView
+        android:id="@+id/replaySurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+     <RelativeLayout
+        android:id="@+id/layout_replay_top_menubar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/replay_top_menubar_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_replay_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/backicon" />
+
+        <TextView
+            android:id="@+id/txt_replay_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Title"
+            android:textColor="@color/yellow"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_replay_bottom_menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/time_bar" >
+
+        <ImageView
+            android:id="@+id/iv_replay_play_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/actionbar_back_bg_state"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/bjx" />
+        
+        <TextView 
+            android:id="@+id/txt_replay_bottom_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="00:00/00:00"
+            android:textSize="13sp"
+            />
+
+        <SeekBar
+            android:id="@+id/seekbar_replay_play"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="6dip"
+            android:layout_toRightOf="@id/txt_replay_bottom_time"
+            android:max="100"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/seekbar_thumb" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:id="@+id/iv_Progressbar_Inner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/main_progressbar_state_inner" />
+
+        <ProgressBar
+            android:id="@+id/iv_Progressbar_Outer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/main_progressbar_state_outer" />
+    </FrameLayout>
+
+</RelativeLayout>

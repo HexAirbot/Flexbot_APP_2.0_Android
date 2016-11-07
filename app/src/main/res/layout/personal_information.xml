@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_meune_bg1"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/top_bar_background_lunch"
+        >
+
+        <ImageView
+            android:id="@+id/backBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/backbtn" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:text="@string/lunch_menue_title_information"
+            android:textColor="@color/white"
+            android:textSize="@dimen/settings_title_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cc.flexbot.www.ui.CircleImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/head_portrait1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/head_portrait" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09">
+
+        <TextView
+            android:id="@+id/UserSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/lunch_information_title_gender"
+            android:textSize="@dimen/lunch_information_editor_size"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/listview_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lunch_information_title_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:id="@+id/Username"
+            android:drawableEnd="@drawable/btn_arrow_right_normal"
+            android:hint="@string/lunch_information_title_not_fill"
+            android:textColor="@color/white"
+            android:selectAllOnFocus="true"
+            android:textSize="@dimen/lunch_information_editor_size"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/listview_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lunch_information_title_email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:paddingRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:drawableEnd="@drawable/btn_arrow_right_normal"
+            android:hint="@string/lunch_information_title_not_fill"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/listview_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lunch_information_title_area"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:id="@+id/UserLocation"
+            android:drawableEnd="@drawable/btn_arrow_right_normal"
+            android:hint="@string/lunch_information_title_not_fill"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/listview_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lunch_information_title_constellation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:id="@+id/UserConstellation"
+            android:drawableEnd="@drawable/btn_arrow_right_normal"
+            android:hint="@string/lunch_information_title_not_fill"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/listview_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lunch_information_title_signature"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:drawableEnd="@drawable/btn_arrow_right_normal"
+            android:id="@+id/UserIntroduction"
+            android:hint="@string/lunch_information_title_not_fill"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/listview_item_bg">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/Logout"
+            android:text="@string/lunch_information_title_quit"
+            android:background="#00000000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lunch_information_editor_size"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guide_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/guide_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/guide_0" />
+
+        <ImageView
+            android:id="@+id/guide_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guide_1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guide_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guide_2"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guide_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guide_3"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guide_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guide_4"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guide_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guide_5"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guide_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guide_6"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
